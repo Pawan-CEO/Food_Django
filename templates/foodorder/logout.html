@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Food App</title>
+    <style>
+        #jambotron_heading{
+            background-image: url(images/heading.jpg);
+            text-shadow:3px 5px 6px gray;
+            cursor: none;
+        }
+    </style>
+        <script>
+    function yourFunction(){
+    window.location.href = "/foodorder/login.html";
+    }
+    setTimeout(function(){yourFunction()},2000);
+
+    </script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="jumbotron text-center" id="jambotron_heading">
+                <h1>Food Order</h1>
+                <p>Your Food We deliver.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 text-center alert alert-warning">
+            <h2>Logout {{ uname }}</h2>
+        </div>
+    </div>
+</div>
+</body>
+</html>

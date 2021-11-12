@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <title>Food App</title>
+    <style>
+        #jambotron_heading{
+            background-image: url({% static "foodorder/images/heading.jpg" %});
+            text-shadow:3px 5px 6px gray;
+            cursor: none;
+        }
+    </style>
+    <script>
+    function yourFunction(){
+    window.location.href = "/food/home/";
+    }
+    setTimeout(function(){yourFunction()},5000);
+
+    </script>
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="jumbotron text-center" id="jambotron_heading">
+                <h1>Food Order</h1>
+                <p>Your Food We deliver.</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="alert alert-success text-center"><h3>{{uname}} Successfully Order!!</h3></div>
+      </div>
+      <div class="col-sm-6 tex-center bg-primary"><h4>Total Amount</h4>
+      </div>
+      <div class="col-sm-6 text-center bg-info"><h4>Rs. {{total_value}}</h4></div>
+    </div>
+    <div class="col-sm-12 bg-warning text-center">
+      <h3>Hope you are happy with your purchase! Thank you for being a valued customer!</h3>
+    </div>
+</div>
+
+</body>
+</html>
